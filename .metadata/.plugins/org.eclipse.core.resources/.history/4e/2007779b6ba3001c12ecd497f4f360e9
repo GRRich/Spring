@@ -1,0 +1,16 @@
+package ex03;
+
+public class MainClass {
+	
+	public static void main(String[] args) {
+		
+		DatabaseDev dev = new DatabaseDev();
+		dev.setUid("asr");
+		dev.setUrl("www");
+		dev.setUpw("123");
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package ex03;
+
+public class DatabaseDev {
+	
+	private String url;
+	private String uid;
+	private String upw;
+	
+
+}
