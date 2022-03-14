@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ex01.SpringTest"/>
+<fullyQualifiedTypeName name="ex01.SpringTest2"/>
+<fullyQualifiedTypeName name="ex02.Chef"/>
+<fullyQualifiedTypeName name="ex02.Hotel"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="ex03.DatabaseDev"/>
+<fullyQualifiedTypeName name="ex03.MemberDAO"/>
+</qualifiedTypeNameHistroy>
