@@ -68,4 +68,18 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="SpringMake2"/>
+			<item value="SpringMake"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="com.simple"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 </section>
