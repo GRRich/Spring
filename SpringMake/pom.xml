@@ -5,23 +5,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
-  <!-- 스프링 모듈 다운 -->
+  <!-- 스프링 모듈 다운(메이븐 레파지토리) -->
   
   <dependencies>
-  
-  	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-context</artifactId>
-	    <version>5.2.10.RELEASE</version>
-	</dependency>
-	
 	<dependency>
+	   <groupId>org.springframework</groupId>
+	   <artifactId>spring-context</artifactId>
+	   <version>5.2.10.RELEASE</version>
+	</dependency>
+  
+	 <dependency>
 	    <groupId>org.springframework</groupId>
 	    <artifactId>spring-webmvc</artifactId>
 	    <version>5.2.10.RELEASE</version>
 	</dependency>
-	
+  
   </dependencies>
+  
+  
+  
+  
   
   <build>
     <plugins>

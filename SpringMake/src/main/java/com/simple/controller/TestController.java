@@ -9,9 +9,10 @@ public class TestController {
 	@RequestMapping("/")
 	public String home() {
 		
-		System.out.println("실향됨");
+		System.out.println("실행됨");
 		
-		return "/WEB-INF/jsp/home.jsp"; //디스패처 서블릿으로 돌아갈 경로
+//		return "/WEB-INF/jsp/home.jsp"; //디스패처 서블릿으로 돌아갈 경로
+		return "home";
 	}
-
+	
 }

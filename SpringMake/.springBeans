@@ -7,8 +7,6 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>webapp/WEB-INF/config/spring_servlet.xml</config>
-		<config>webapp/WEB-INF/config/root_servlet.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
