@@ -17,10 +17,11 @@
 	6. 힌트:문자열 비교는 equals()를 이용, RedirectAttribute 이용 
 	--%>
  
-	<form action="" method="post">
+	<form action="join2" method="post">
 		ID: <input type="text" name="id" size="10"><br>
 		비밀번호 : <input type="password" name="pw" size="10"><br>
 		비밀번호 확인: <input type="password" name="pw_check" size="10"><br>
+		${msg }
 		<input type="submit" value="로그인">
 	</form>
 	
