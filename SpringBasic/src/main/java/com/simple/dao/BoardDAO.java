@@ -2,7 +2,7 @@
 
 import java.util.ArrayList;
 
-import com.simple.conmmand.BoardVO;
+import com.simple.command.BoardVO;
 
 public interface BoardDAO {
 

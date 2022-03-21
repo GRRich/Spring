@@ -8,7 +8,8 @@
 </head>
 <body>
 
-	당신의 생일은${birth.year }-${birth.month }-${birth.day }
+	당신의 생일은 ${birth.year }-${birth.month }-${birth.day }
+
 
 </body>
 </html>

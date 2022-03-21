@@ -8,9 +8,10 @@
 </head>
 <body>
 
-	<h3>ex05 페이지</h3>
-	${info.id }
-	${info.age }
+	<h3>ex05</h3>
+	${info.id }<br>
+	${info.age }<br>
+
 
 </body>
 </html>

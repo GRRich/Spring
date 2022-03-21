@@ -11,23 +11,30 @@
 	
 	<h3>점수 결과</h3>
 	<c:forEach var="vo" items="${list }" varStatus="num">
-		번호:${num.index }
+		번호:${vo.num }
 		이름:${vo.name }
 		국어:${vo.kor }
 		영어:${vo.eng }
 		수학:${vo.math }
-		<button type="button" onclick="location.href='scoreDelete?num=${num.index}' ">삭제</button>
+		<button type="button" onclick="location.href='scoreDelete?num=${vo.num}' " >삭제하기</button>
 		<br>
 	</c:forEach>
 	
 	<a href="scoreRegist">추가 등록하기</a>
+	
 	
 	<script>
 		var msg = '${msg}'; //msg값이 없다면 공백문자
 		if(msg != '') {
 			alert(msg);
 		}
+		
 	</script>
+	
+	
+	
+	
+	
 	
 </body>
 </html>

@@ -7,11 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<h3>ex03페이지</h3>
 	
-	${serverTime } <br>
-	${name } <br>
-
+	${serverTime }<br>
+	${name }<br>
+	
+	
+	
+	
+	
 </body>
 </html>

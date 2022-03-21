@@ -7,10 +7,10 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- 핸들러매핑, 핸들러어댑터, 스프링어노테이션 사용처리 -->	
+	<!-- 핸들러맵핑, 핸들러어댑터, 스프링어노테이션 사용처리 -->
 	<annotation-driven />
-
-	<!-- 정적자원매핑 -->
+	
+	<!-- 정적자원 맵핑 -->
 	<resources mapping="/resources/**" location="/resources/" />
 
 	<!-- 뷰리졸버 -->
@@ -23,11 +23,11 @@
 	<context:component-scan base-package="com.simple.*" />
 	
 	
-	<!-- 서비스를 빈으로 생성 -->
+	
+	<!-- 서비스를 빈으로생성 -->
 	<!-- 
 	<beans:bean id="xxx" class="com.simple.service.ScoreServiceImpl" />
 	 -->
-	
 	
 	
 </beans:beans>

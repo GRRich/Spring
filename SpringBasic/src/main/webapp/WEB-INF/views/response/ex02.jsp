@@ -8,11 +8,13 @@
 </head>
 <body>
 
-	<h3>ex02 페이지</h3>
+	<h3>ex02페이지</h3>
 	
-	${serverTime } <br>
-	${name } <br>
+	${serverTime }<br>
+	${name }<br>
 	${id }
+
+
 
 </body>
 </html>

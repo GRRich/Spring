@@ -15,10 +15,12 @@
 	 --%>
 	<h2>회원가입</h2>
 	<form action="join" method="post">
+	
 		아이디:<input type="text" name="id"><br>
 		비밀번호:<input type="password" name="pw"><br>
 		이름:<input type="text" name="name"><br>
 		이메일:<input type="email" name="email"><br>
+		
 		<input type="submit" value="회원가입">
 	</form>
 	

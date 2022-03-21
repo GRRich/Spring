@@ -20,22 +20,25 @@
 			<td>비고</td>
 		</tr>
 		
+		<c:forEach var="vo" items="${list }" >
 		<tr>
-			<td>???????</td>
-			<td>???????</td>
-			<td>???????</td>
-			<td>???????</td>
+			<td>${vo.bno }</td>
+			<td>${vo.name }</td>
+			<td>${vo.title }</td>
+			<td>${vo.content }</td>
 			<!-- 
 			1. boardDelete로 삭제 처리하세요. 
 			2. 삭제 후엔 목록화면으로 리다이렉트 하세요.
 			-->
-			<td><input type="button" value="삭제"></td>
+			<td><input type="button" value="삭제" onclick="location.href='boardDelete?bno=${vo.bno}' "></td>
 		</tr>
-
+		</c:forEach>
+		
+		
 	</table>
 	
 	<%--게시글 작성페이지로 이동시키세요. --%>
-	<a href="">게시글 작성</a>
+	<a href="boardRegister">게시글 작성</a>
 	
 </body>
 </html>

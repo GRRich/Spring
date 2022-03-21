@@ -9,17 +9,21 @@
 <body>
 
 	<h3>점수 등록</h3>
-	
+
 	<form action="scoreForm" method="post">
 	
-		이름: <input type="text" name="name"><br>
-		국어: <input type="text" name="kor"><br>
-		영어: <input type="text" name="eng"><br>
-		수학: <input type="text" name="math"><br>
+		이름:<input type="text" name="name"><br>
+		국어:<input type="text" name="kor"><br>
+		영어:<input type="text" name="eng"><br>
+		수학:<input type="text" name="math"><br>
 		
 		<input type="submit" value="등록하기">
 		
 	</form>
+
+
+
+
 
 </body>
 </html>

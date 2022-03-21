@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<h3>결과화면</h3>
-	${vo.id }
-	${vo.pw }
-	${vo.name }
+	${vo.id }<br>
+	${vo.pw }<br>
+	${vo.name }<br>
 	${vo.email }
-
+	
 </body>
 </html>

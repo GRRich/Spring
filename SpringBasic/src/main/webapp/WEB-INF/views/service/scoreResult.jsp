@@ -12,6 +12,6 @@
 	
 	<a href="scoreRegist">다시 등록하기</a>
 	<a href="scoreList">점수 목록보기</a>
-
+	
 </body>
 </html>

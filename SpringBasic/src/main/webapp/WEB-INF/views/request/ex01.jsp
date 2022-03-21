@@ -7,12 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 	<h3>ex01파일</h3>
 	
 	<a href="basic1">basic1요청</a>
 	<a href="basic2">basic2요청</a>
 	<a href="basic3">basic3요청</a>
-
+	
+	
+	
+	
+	
 </body>
 </html>

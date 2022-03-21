@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<h3>결과화면</h3>
-
+	
 </body>
 </html>

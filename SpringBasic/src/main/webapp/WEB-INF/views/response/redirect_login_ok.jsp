@@ -7,9 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<h3>로그인성공페이지</h3>
+	
+	<h3>성공화면</h3>
 	${msg }
-
+	
+	
 </body>
+
 </html>

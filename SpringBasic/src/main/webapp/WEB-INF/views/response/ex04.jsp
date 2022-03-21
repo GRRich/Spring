@@ -10,7 +10,8 @@
 
 	<h3>ex04페이지</h3>
 	
-	모델어트리뷰트로 넘어온값 : ${id }
+	ModelAttribute로 넘어온값 : ${id }
+
 
 </body>
 </html>
