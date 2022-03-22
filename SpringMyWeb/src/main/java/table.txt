@@ -1,0 +1,10 @@
+create table freeboard(
+    bno NUMBER(10) PRIMARY key,
+    title varchar2(300) not null,
+    writer VARCHAR2(50) not null,
+    content VARCHAR2(2000),
+    regdate date DEFAULT sysdate,
+    updatedate date DEFAULT sysdate
+);
+
+create SEQUENCE freeboard_seq INCREMENT by 1 START WITH 1 NOCACHE;

@@ -24,8 +24,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.coding404"/>
 		</list>
 		<list key="groupId">
+			<item value="com.coding404"/>
 		</list>
 		<list key="artifactId">
 		</list>
@@ -38,19 +40,17 @@
 			<item value="[name]"/>
 		</list>
 		<list key="version">
-			<item value="0.0.1-SNAPSHOT"/>
+			<item value="1.0.0-BUILD-SNAPSHOT"/>
 		</list>
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.simple"/>
-			<item value="SpringDI"/>
+			<item value="com.coding404"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="SpringDI"/>
-			<item value="basic"/>
+			<item value="MyWeb"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -61,7 +61,7 @@
 			<item value="[name]"/>
 		</list>
 		<list key="version">
-			<item value="0.0.1-SNAPSHOT"/>
+			<item value="1.0.0-BUILD-SNAPSHOT"/>
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
@@ -80,6 +80,18 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 </section>
