@@ -114,7 +114,7 @@
 			<version>1.2</version>
 		</dependency>
 	
-		<!-- Test -->
+		<!-- Test버전 4.12이상 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>

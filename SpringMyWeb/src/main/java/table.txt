@@ -8,3 +8,13 @@ create table freeboard(
 );
 
 create SEQUENCE freeboard_seq INCREMENT by 1 START WITH 1 NOCACHE;
+
+--페이지 구문
+SELECT *
+FROM (SELECT ROWNUM rn,
+               a.*
+        FROM (select * 
+              from freeboard 
+              order by bno desc) a
+)
+where rn > 10 and rn <= 20;
