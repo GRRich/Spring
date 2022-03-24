@@ -10,8 +10,50 @@
 		values(freeboard_seq.nextval, #{writer}, #{title}, #{content})
 	</insert>
 	
+	<!-- CDATA로 감싼 값을 ㅅ누수한 문자열 형태로 인식시킴 -->
+	<!-- 동적쿼리의 test에는 조건을 만들고, 전달되는vo의 게터(변수명)을 사용할수있습니다 -->
 	<select id="getList" resultType="FreeBoardVO">
-		select * from freeboard order by bno desc
+		<![CDATA[
+			SELECT *
+			FROM (SELECT ROWNUM rn,
+			               a.*
+			        FROM (select * 
+			              from freeboard
+		]]>
+						  <if test="searchType == 'title' " >where title like '%' || #{searchName} || '%'</if>
+						  <if test="searchType == 'writer' " >where writer like '%' || #{searchName} || '%'</if>
+						  <if test="searchType == 'content' " >where content like '%' || #{searchName} || '%'</if>
+						  <if test="searchType == 'titcont' " >where title like '%' || #{searchName} || '%' or content like '%' || #{searchName} || '%'</if>	
+						  <if test="searchType == null or searchType == '' ">where 1 = 1</if>	
+						   
+						  <!-- 
+						  <choose>
+						  	  <when test="searchType == 'title' ">where title like '%' || #{searchName} || '%'</when>
+						  	  <when test="searchType == 'writer' ">where writer like '%' || #{searchName} || '%'</when>
+						  	  <when test="searchType == 'content' ">where content like '%' || #{searchName} || '%'</when>
+						  	  <when test="searchType == 'title' ">where title like '%' || #{searchName} || '%' or content like '%' || #{searchName} || '%'</when>	 	
+							  <otherwise>where 1 = 1</otherwise>							  	  
+						  </choose>
+						   -->
+						   	
+		<![CDATA[
+			              order by bno desc) a
+			)
+			where rn > (#{pageNum}-1) * #{amount} and rn <= #{pageNum} * #{amount}
+		]]>
+	</select>
+	
+	<!-- 전체 게시글 수 -->
+	<select id="getTotal" resultType="int">
+	
+		select count(*) as total from freeboard
+		<if test="searchType == 'title' " >where title like '%' || #{searchName} || '%'</if>
+		<if test="searchType == 'writer' " >where writer like '%' || #{searchName} || '%'</if>
+		<if test="searchType == 'content' " >where content like '%' || #{searchName} || '%'</if>
+		<if test="searchType == 'titcont' " >where title like '%' || #{searchName} || '%' or content like '%' || #{searchName} || '%'</if>	
+		<if test="searchType == null or searchType == '' ">where 1 = 1</if>
+		
+		
 	</select>
 	
 	<select id="getContent" resultType="FreeBoardVO">
@@ -29,5 +71,7 @@
 	<delete id="delete">
 		delete freeboard where bno = #{bno}
 	</delete>
+	
+	
 	
 </mapper>  
